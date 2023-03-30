@@ -9,6 +9,7 @@ export CLUSTER_NAME=kubeflow-demo
 cd deployments/vanilla/terraform
 
 sed -i 's/?ref=v4.12.1//g' main.tf
+sed -i 's/?ref=v4.12.0//g' main.tf
 
 #Save the variables to a .tfvars file
 cat <<EOF > sample.auto.tfvars
